@@ -1,0 +1,16 @@
+npm install -g aws-cdk
+
+cdk --version
+
+npx npm-check-updates -u
+
+mkdir hello-cdk 
+cd hello-cdk
+
+cdk init [sample-app] --language typescript
+
+npm install @aws-cdk/aws-s3 @aws-cdk/ec2
+
+cdk synth
+
+cdk deploy --profile dev-stages                                                                                                     ─╯

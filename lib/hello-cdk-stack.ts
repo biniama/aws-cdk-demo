@@ -8,7 +8,7 @@ export class HelloCdkStack extends cdk.Stack {
     super(scope, id, props);
 
     const queue = new sqs.Queue(this, 'HelloCdkQueue', {
-      visibilityTimeout: cdk.Duration.seconds(300)
+      visibilityTimeout: cdk.Duration.seconds(300),
     });
 
     const topic = new sns.Topic(this, 'HelloCdkTopic');
